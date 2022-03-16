@@ -10,7 +10,7 @@ const SignupScreen = ({ navigation }) => {
     return (
         <SafeAreaView>
             <LoginForm 
-            formTitle={'Welcome to Evac-act Sign Up to continue'}
+            formTitle={'Welcome to PrEvac Sign Up to continue'}
             errorMessage={ errorMessage } 
             onSubmit={({ email, password })=> signup({ email, password }) } 
             buttonText= {'Sign Up' }
