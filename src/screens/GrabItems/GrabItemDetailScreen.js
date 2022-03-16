@@ -6,7 +6,7 @@ import BasicStyledSpace from "../../components/BasicStyleSpace";
 import { FontAwesome, EvilIcons } from '@expo/vector-icons'
 
 const GrabItemDetailScreen = ({ navigation, route }) => {
-  const { state, deleteItems } = useContext(ItemContext);
+  const { state, deleteItems, getItems } = useContext(ItemContext);
   const id = route.params.id;
   const item = route.params.item;
   return (
@@ -23,7 +23,7 @@ const GrabItemDetailScreen = ({ navigation, route }) => {
       <Text style={styles.instruction}> {item.instructions}</Text>
       <BasicStyledSpace />
       <View style={styles.row}>
-        <TouchableOpacity onPress={() => deleteItems(item._id)}>
+        <TouchableOpacity onPress={() => {deleteItems(item._id), getItems()}}>
           <FontAwesome name="trash-o" style={styles.icon} />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('EditItem', {item: item})}>

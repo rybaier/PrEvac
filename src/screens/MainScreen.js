@@ -12,7 +12,7 @@ const MainScreen = ( { navigation }) => {
     
     return (
         <ScrollView style={styles.container}>
-           <Text style= {styles.title}> Evac-Act</Text>
+           <Text style= {styles.title}> PrEvac</Text>
            <Text style= {styles.tagline}> Stay Calm and Exectute </Text>
             <BasicStyledSpace />
             <BasicStyledSpace />

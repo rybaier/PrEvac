@@ -4,7 +4,7 @@ import ItemForm from "../../components/ItemForm";
 import { Context as ItemContext } from "../../context/GrabItemContext";
 
 const CreateGrabItemScreen = () => {
-  const { state, createItems } = useContext(ItemContext)
+  const { state, createItems, getItems } = useContext(ItemContext)
 
   return (
     <View>
@@ -13,7 +13,7 @@ const CreateGrabItemScreen = () => {
         errorMessage={null}
         initialValues= {{priority: '', name: '', location: '', instructions:''}}
         onSubmit={( priority, name, location, instructions ) =>
-          createItems( priority, name, location, instructions )
+          {createItems( priority, name, location, instructions ), getItems()}
         }
         buttonText={'Save Grab Item'}
       />

@@ -5,7 +5,7 @@ import MeetingPlaceForm from "../../components/MeetingPlaceForm";
 import { Context as MeetingPlaceContext } from "../../context/MeetingPlaceContext";
 
 const CreateMeetingPlacesScreen = ({ navigation }) => {
-  const { state, createPlaces } = useContext(MeetingPlaceContext);
+  const { state, createPlaces, getPlaces } = useContext(MeetingPlaceContext);
 
   return (
     <SafeAreaView>
@@ -14,7 +14,7 @@ const CreateMeetingPlacesScreen = ({ navigation }) => {
         errorMessage={null}
         initialValues={{name:'', compass_direction:'', address:''}}
         onSubmit={( name, compass_direction, address ) =>
-          createPlaces( name, compass_direction, address )
+          {createPlaces( name, compass_direction, address ), getPlaces()}
         }
         buttonText={"Save Meeting Place"}
       />

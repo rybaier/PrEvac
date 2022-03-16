@@ -4,11 +4,11 @@ import { Text, View, StyleSheet } from "react-native";
 import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native-safe-area-context";
 import BasicStyledSpace from "../../components/BasicStyleSpace";
-import { Context as MeetingPlaceContext } from "../../context/AuthContext";
+import { Context as MeetingPlaceContext } from "../../context/MeetingPlaceContext";
 import { EvilIcons, FontAwesome } from '@expo/vector-icons'
 
 const MeetingPlaceDetailScreen = ({ navigation, route }) => {
-  const { deletePlaces } = useContext(MeetingPlaceContext)
+  const { deletePlaces, getPlaces } = useContext(MeetingPlaceContext)
   const id = route.params.id
   const place = route.params.place
  
@@ -22,7 +22,7 @@ const MeetingPlaceDetailScreen = ({ navigation, route }) => {
             <Text style={styles.address }> { place.address }</Text>
             <BasicStyledSpace />
             <View style={styles.row}>
-        <TouchableOpacity onPress={() => deletePlaces(item._id)}>
+        <TouchableOpacity onPress={() => {deletePlaces(place._id), getPlaces()}}>
           <FontAwesome name="trash-o" style={styles.icon} />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('EditPlace', {place: place})}>

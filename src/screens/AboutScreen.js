@@ -15,7 +15,8 @@ const AboutScreen = ({ navigation }) => {
         
         <ScrollView >
             <BasicStyledSpace />
-            <Text style={ styles.about }>Welcome to Evac-act this app is designed to help ease some of the 
+            <BasicStyledSpace />
+            <Text style={ styles.about }>Welcome to PrEvac this app is designed to help ease some of the 
                 stress that is involved when the call to evacuate your home is made. </Text>
                 <Text style={ styles.about }>There are 2 main parts to this app</Text>
                 <BasicStyledSpace />
@@ -36,7 +37,7 @@ const AboutScreen = ({ navigation }) => {
                     based on the amount of time you have. 
                 </Text>
                 <View style={ styles.row }>
-                <TouchableOpacity style={ styles.column } onPress={() => navigation.navigate('Sigin') }>
+                <TouchableOpacity style={ styles.column } onPress={() => navigation.navigate('Signin') }>
                 <MaterialIcons name="account-circle" size={50} color="black" />                     
                 <Text style={ styles.text }>Login</Text>
                 </TouchableOpacity>
@@ -46,6 +47,7 @@ const AboutScreen = ({ navigation }) => {
                 </TouchableOpacity>
             </View>
         </ScrollView>
+        
     )
 }
 
