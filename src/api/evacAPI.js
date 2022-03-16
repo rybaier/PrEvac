@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 //restart ngrok and change url each day until backend is deployed
 const instance =axios.create({
-    baseURL: 'http://e998-98-97-38-83.ngrok.io/'
+    baseURL: 'https://prevac-backend.herokuapp.com/'
 })
 
 instance.interceptors.request.use(
