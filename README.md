@@ -46,7 +46,7 @@ Things The app will do
 - Messaging for User Group, SOS function to notify User Group,
 - Local Scanner Radio access to Police, Fire, Federal dispatch radio channels
 ## Technologies
-- React Native, Express, MERN Stack
+- React Native, Expo, Axios, Bcrypt, JWT,  Express, MERN Stack
 
 ##  CapStone Timeline 
 - March 7th
