@@ -28,8 +28,27 @@ Things The app will do
     - safe deposit box or safe recommendation?
 
 - access to local scanner Radio by county and city
+## Why I am building this
+- First being evacuated from your home is wild emotional ride, it is challenging, and happens so fast.
 
-## Timeline 
+- This started out as an idea for my capstone project for General Assembly, I really wanted to build something that would be useful for the public. I also wanted to have something that I could continue to work on after the course and keep improving and building it. 
+
+- I got my wish, from my wireframe mockups and designing I became focused on how to have an app that could be helpful before, during, and after the evacuation process. I had a huge case of SCOPE CREEP. However, I have something to work on for a while and once I achieve the full functionality, of all features which is waiting for approval from specific data structures,(access to local scanner streaming from Broadcastify being a huge blocker currently)
+
+- At the core this app is designed to have a prepared plan if you are forced to evacuate your home. This consists of deciding what to take, and where to go when it happens. Trying to do this in the heat of the moment, makes it possible to forget something important.
+
+### MVP Goals
+- user Auth flow
+- Grab Item and Meeting Place full CRUD
+#### Stretch Goals
+- User Groups for familys
+- Location Share tracking traffic, directions to meeting places
+- Messaging for User Group, SOS function to notify User Group,
+- Local Scanner Radio access to Police, Fire, Federal dispatch radio channels
+## Technologies
+- React Native, Express, MERN Stack
+
+##  CapStone Timeline 
 - March 7th
     - Submit Proposal For Approval
     - Have wireframes, and basic readme complete for proposal
@@ -54,13 +73,13 @@ Things The app will do
     - build forms 
     -  make context crud functions for items and places 
 - March 12th
-
+    - screen building
 - March 13th
-     - Reach MVP  
+     - screen and context connection
 - March 14th
+    - MVP achieve
 - March 15th
-    - Stretch Goal and styling 
-    - Deploy to app store 
+    - styling and bug smashing
 - March 16th
     - Presentation Day! 
 
@@ -92,22 +111,3 @@ use description for how to create a backup
 ![alt text](https://github.com/rybaier/PrEvac/blob/main/wireframes/ScreenShotsFromSimulator.png)
 
 
-## Why I am building this
-- First being evacuated from your home is wild emotional ride, it is challenging, and happens so fast.
-
-- This started out as an idea for my capstone project for General Assembly, I really wanted to build something that would be useful for the public. I also wanted to have something that I could continue to work on after the course and keep improving and building it. 
-
-- I got my wish, from my wireframe mockups and designing I became focused on how to have an app that could be helpful before, during, and after the evacuation process. I had a huge case of SCOPE CREEP. However, I have something to work on for a while and once I achieve the full functionality, of all features which is waiting for approval from specific data structures,(access to local scanner streaming from Broadcastify being a huge blocker currently)
-
-- At the core this app is designed to have a prepared plan if you are forced to evacuate your home. This consists of deciding what to take, and where to go when it happens. Trying to do this in the heat of the moment, makes it possible to forget something important.
-
-### MVP Goals
-- user Auth flow
-- Grab Item and Meeting Place full CRUD
-#### Stretch Goals
-- User Groups for familys
-- Location Share tracking traffic, directions to meeting places
-- Messaging for User Group, SOS function to notify User Group,
-- Local Scanner Radio access to Police, Fire, Federal dispatch radio channels
-## Technologies
-- React Native, Express, MERN Stack
