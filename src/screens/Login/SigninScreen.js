@@ -11,7 +11,7 @@ const SigninScreen = ({ navigation }) => {
     return (
         <SafeAreaView>
          <LoginForm 
-         formTitle={'Welcome to Evac-act Sign In to continue'}
+         formTitle={'Welcome to PrEvac Sign In to continue'}
          errorMessage={ errorMessage } 
          onSubmit={({ email, password })=> signin({ email, password }) } 
          buttonText= {'Sign In' }

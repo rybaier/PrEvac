@@ -19,7 +19,7 @@ const GrabItemDetailScreen = ({ navigation, route }) => {
       <Text style={styles.location}> Where to Find:</Text>
       <Text style={styles.location}>{item.location}</Text>
       <BasicStyledSpace />
-      <Text style={styles.instruction}> How to get to it: </Text>
+      <Text style={styles.instruction}> Instructions: </Text>
       <Text style={styles.instruction}> {item.instructions}</Text>
       <BasicStyledSpace />
       <View style={styles.row}>
