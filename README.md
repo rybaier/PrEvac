@@ -1,4 +1,4 @@
-# Evac Assistance App - Evacced or Evact? working title? Evaxapp or EvacPrapp or Evac Assist
+# Evac Assistance App - PrEvac? working title? Evaxapp or EvacPrapp or Evac Assist
 ## What is this 
 An Evacuation Assistance App to help individuals, families and friends reduce the stress and have a plan to follow when the need to evacuate their home arises.
 
@@ -48,7 +48,7 @@ Things The app will do
 ## Technologies
 - React Native, Expo, Axios, Bcrypt, JWT,  Express, MERN Stack
 
-##  CapStone Timeline 
+##  CapStone Project Timeline 
 - March 7th
     - Submit Proposal For Approval
     - Have wireframes, and basic readme complete for proposal

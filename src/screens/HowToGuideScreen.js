@@ -78,11 +78,12 @@ const HowToGuideScreen = () => {
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: '#808080'
+        
     },
     text:{
         fontSize: 18,
-        color: '#ffffff'
+        margin: 10,
+        
     }
 });
 
